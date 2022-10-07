@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+header {
+    border-bottom: 1px solid #ccc ;
+    margin-bottom: 5%;
+    background-color: rgb(93, 93, 208);
+    max-width: 100%;
+    padding: 16px;
+}
+
+.container > h1  {
+    color: white;
+    font-style: italic;
+}
+
+.links > a  {
+    color:white;
+    margin: 16px;
+    font-weight: bold ;
+    text-decoration: none;
+    border: none;
+}
+
+.links a:hover {
+    cursor: pointer;
+    border-bottom: 4px solid white;
+}
+
+.destaque {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 24px;
+
+}
+
+.sobre {
+    margin-left: 24px;
+}
+
+.conteudo {
+    max-width: 90%;
+    padding-left: 16px;
+}
+
+.destaque img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h2, hr {
+    margin-bottom: 24px;
+    font-style: italic;
+
+    color: rgb(93, 93, 208)
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap:1%;
+}
+
+button {
+    background-color:  rgb(93, 93, 208);
+    color:white;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.noticia > img {
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+}
+
+.noticia > h3, .noticia > p, .noticia > button {
+    margin: 12px 0; 
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+    
+    .destaque {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destaque >img {
+        width: 100%;
+        height: auto;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre {
+        padding: 24px 0 ;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        width: 100%;
+    }
+    .destaque {
+        display: flex;
+        flex-direction: column;
+        padding:5%;
+        margin-bottom: 0;
+    }
+
+    .destaque >img {
+        width: 100%;
+        height: auto;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 48%);
+        column-gap:2%;    
+
+    }
+
+    section {
+        padding:0 5%;
+    }
+
+    .sobre {
+        padding: 24px 0;
+        margin-left: 0px;
+    }
+}
+
+
+
+
